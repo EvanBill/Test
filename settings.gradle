@@ -1,0 +1,39 @@
+
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+        maven { url "https://jitpack.io" }
+        maven { url 'https://developer.huawei.com/repo/' }
+        maven { url 'https://maven.aliyun.com/repository/public/' }
+        maven { url 'https://maven.aliyun.com/repository/central' }
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+//        jcenter()
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+        maven { url 'https://developer.huawei.com/repo/' }
+        maven { url 'https://maven.aliyun.com/repository/public/' }
+        maven { url 'https://maven.aliyun.com/repository/central' }
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+        maven { url 'https://artifact.bytedance.com/repository/pangle' }
+        maven { url 'https://nx-repository-178.energysh.com/repository/maven-releases/' }
+        maven { url 'https://nx-repository-178.energysh.com/repository/product_development_center/' }
+        maven { url "https://artifact.bytedance.com/repository/AwemeOpenSDK" }
+//        jcenter()
+
+    }
+}
+enableFeaturePreview("VERSION_CATALOGS")
+rootProject.name = "Test"
+include ':app'
+
