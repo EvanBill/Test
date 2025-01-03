@@ -5,9 +5,11 @@
     android:background="@color/design_dark_default_color_background"
     android:gravity="center_horizontal">
 
-    <androidx.appcompat.widget.AppCompatTextView
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnWork"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="测试"
-        android:textColor="@color/white" />
+        android:text="Work"
+        android:textAllCaps="false"
+        android:textColor="@color/black" />
 </androidx.appcompat.widget.LinearLayoutCompat>
