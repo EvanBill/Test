@@ -16,3 +16,10 @@ plugins {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+ext {
+    comileSDKVer = 34
+    minSdkVersion = 21
+    targetSdkVersion = 34
+}
+

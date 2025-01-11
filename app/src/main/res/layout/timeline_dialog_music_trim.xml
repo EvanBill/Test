@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_black_80">
+
+    <View
+        android:id="@+id/viewDialogMusicSettingCancel"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/linearLayout"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/timeline_bg_dialog_music_setting"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dp_28"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ivDialogMusicSettingTop"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_67"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivDialogMusicSettingAvatar"
+                android:layout_width="@dimen/dp_38"
+                android:layout_height="@dimen/dp_38"
+                android:layout_marginStart="@dimen/dp_16"
+                android:background="@drawable/ripple_bright_oval"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:type="circle" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivDialogMusicSettingPlay"
+                android:layout_width="@dimen/dp_22"
+                android:layout_height="@dimen/dp_22"
+                app:layout_constraintBottom_toBottomOf="@id/ivDialogMusicSettingAvatar"
+                app:layout_constraintEnd_toEndOf="@id/ivDialogMusicSettingAvatar"
+                app:layout_constraintStart_toStartOf="@id/ivDialogMusicSettingAvatar"
+                app:layout_constraintTop_toTopOf="@id/ivDialogMusicSettingAvatar"
+                app:srcCompat="@drawable/music_play_selector_3" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDialogMusicSettingName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_11"
+                android:layout_marginEnd="@dimen/dp_11"
+                android:maxLines="2"
+                android:text="Jingle Bells Swing"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_14"
+                android:gravity="center_vertical"
+                app:autoSizeMaxTextSize="@dimen/sp_14"
+                app:autoSizeMinTextSize="@dimen/sp_10"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/tvDialogMusicSettingUse"
+                app:layout_constraintStart_toEndOf="@id/ivDialogMusicSettingAvatar"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDialogMusicSettingUse"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_26"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:background="@drawable/bg_video_export"
+                android:foreground="@drawable/bg_export_a_one_forground"
+                android:gravity="center"
+                android:paddingHorizontal="@dimen/dp_14"
+                android:text="use"
+                android:textColor="#F2000000"
+                android:textSize="@dimen/sp_14"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/viewDialogMusicSettingDivide"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:background="#3C3C3B"
+            app:layout_constraintTop_toBottomOf="@id/ivDialogMusicSettingTop" />
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/llDialogMusicSettingTimeStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_25"
+            android:layout_marginTop="@dimen/dp_60"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/viewDialogMusicSettingDivide">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/tvDialogMusicSettingTimeStart1"
+                android:layout_width="@dimen/dp_21"
+                android:layout_height="@dimen/dp_21"
+                android:layout_gravity="center"
+                android:background="@drawable/ripple_bg_time"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="2"
+                android:text="00"
+                android:textColor="#FFFFFF"
+                android:textCursorDrawable="@drawable/edit_cursor"
+                android:textSize="@dimen/sp_13" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="@dimen/dp_6"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text=":"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/sp_13" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/tvDialogMusicSettingTimeStart2"
+                android:layout_width="@dimen/dp_21"
+                android:layout_height="@dimen/dp_21"
+                android:layout_gravity="center"
+                android:background="@drawable/ripple_bg_time"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="2"
+                android:text="00"
+                android:textColor="#FFFFFF"
+                android:textCursorDrawable="@drawable/edit_cursor"
+                android:textSize="@dimen/sp_13" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="@dimen/dp_6"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text=":"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/sp_13" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/tvDialogMusicSettingTimeStart3"
+                android:layout_width="@dimen/dp_14"
+                android:layout_height="@dimen/dp_21"
+                android:layout_gravity="center"
+                android:background="@drawable/ripple_bg_time"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textCursorDrawable="@drawable/edit_cursor"
+                android:textSize="@dimen/sp_13" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDialogMusicSettingTimeTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00.0"
+            android:textColor="#80FFFFFF"
+            android:textSize="@dimen/sp_13"
+            app:layout_constraintBottom_toBottomOf="@id/llDialogMusicSettingTimeStart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/llDialogMusicSettingTimeStart" />
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dp_25"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@id/llDialogMusicSettingTimeStart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/llDialogMusicSettingTimeStart">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/tvDialogMusicSettingTimeEnd1"
+                android:layout_width="@dimen/dp_21"
+                android:layout_height="@dimen/dp_21"
+                android:layout_gravity="center"
+                android:background="@drawable/ripple_bg_time"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="2"
+                android:text="00"
+                android:textColor="#FFFFFF"
+                android:textCursorDrawable="@drawable/edit_cursor"
+                android:textSize="@dimen/sp_13" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="@dimen/dp_6"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text=":"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/sp_13" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/tvDialogMusicSettingTimeEnd2"
+                android:layout_width="@dimen/dp_21"
+                android:layout_height="@dimen/dp_21"
+                android:layout_gravity="center"
+                android:background="@drawable/ripple_bg_time"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="2"
+                android:text="00"
+                android:textColor="#FFFFFF"
+                android:textCursorDrawable="@drawable/edit_cursor"
+                android:textSize="@dimen/sp_13" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="@dimen/dp_6"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text=":"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/sp_13" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/tvDialogMusicSettingTimeEnd3"
+                android:layout_width="@dimen/dp_14"
+                android:layout_height="@dimen/dp_21"
+                android:layout_gravity="center"
+                android:background="@drawable/ripple_bg_time"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textCursorDrawable="@drawable/edit_cursor"
+                android:textSize="@dimen/sp_13" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <com.example.test.view.customwaveview.EnAudioLineScrollView
+            android:id="@+id/audioLineScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_54"
+            android:layout_marginTop="@dimen/dp_16"
+            android:layerType="software"
+            app:layout_constraintTop_toBottomOf="@id/llDialogMusicSettingTimeStart" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_24"
+            android:layout_marginEnd="@dimen/dp_16"
+            android:gravity="center"
+            android:text="111111111111111111111"
+            android:textColor="#80ffffff"
+            android:textSize="@dimen/sp_11"
+            app:layout_constraintTop_toBottomOf="@id/audioLineScrollView" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

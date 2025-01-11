@@ -35,12 +35,14 @@ android {
 }
 
 dependencies {
-
+    api project(':AdapterScreen')
+    api project(':lib_common')
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.fragment:fragment-ktx:1.5.2'
     implementation 'androidx.appcompat:appcompat:1.5.1'
     implementation 'com.google.android.material:material:1.6.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation project(':lib_common')
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
@@ -52,4 +54,22 @@ dependencies {
 
     //log 日志
     implementation 'com.jakewharton.timber:timber:5.0.1'
+
+
+    // Powerful and flexible RecyclerAdapter
+    implementation 'io.github.cymchad:BaseRecyclerViewAdapterHelper:3.0.14'
+
+    // 代替广播和部分Handler功能，传递消息
+    implementation 'org.greenrobot:eventbus:3.3.1'
+    // Glide图片加载库
+    //特别注意：由于时间轴timeline aar中引用了glide，
+    // 此处版本更新时需重新编译时间轴aar保持2处glide版本一致，防止重复冲突
+    implementation 'com.github.bumptech.glide:glide:4.13.2'
+    annotationProcessor "com.github.bumptech.glide:compiler:4.12.0"
+    // webpdecoder
+    implementation "com.github.zjupure:webpdecoder:2.0.4.12.0"
+    // Glide图片变换效果库
+    implementation 'jp.wasabeef:glide-transformations:4.3.0'
+
+
 }

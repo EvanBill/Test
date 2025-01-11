@@ -36,4 +36,6 @@ dependencyResolutionManagement {
 enableFeaturePreview("VERSION_CATALOGS")
 rootProject.name = "Test"
 include ':app'
+include ':AdapterScreen'
 
+include ':lib_common'

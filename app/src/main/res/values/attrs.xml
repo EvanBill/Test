@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="EnAudioLineView">
+        <attr format="dimension" name="frameAreaMarginTop"/>
+        <attr format="dimension" name="frameAreaMarginBottom"/>
+
+        <attr format="dimension" name="selectPointAreaMarginTop"/>
+        <attr format="dimension" name="selectPointAreaMarginBottom"/>
+        <attr format="color" name="beatPointNormalColor"/>
+        <attr format="color" name="beatPointSelectedColor"/>
+
+        <attr format="color" name="frameBgColor"/>
+        <attr format="color" name="borderColor"/>
+        <attr format="color" name="innerColor"/>
+        <attr format="dimension" name="metaWidth"/>
+
+        <attr format="color" name="selectPointColor"/>
+        <attr format="dimension" name="selectPointWidth"/>
+
+        <attr format="dimension" name="sperateWidth"/>
+    </declare-styleable>
+</resources>
