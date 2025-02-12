@@ -36,8 +36,8 @@ object WorkManagerUtil {
         val funType = params["funType"] as String
         val workerId = workRequest.id
         processingRequest[funType] = workerId
-        Log.e("ddd", "doWork---enqueue--主Thread${Looper.getMainLooper().thread.name}")
-        Log.e("ddd", "doWork---enqueue--Thread${Thread.currentThread().name}")
+        Log.e("ddd", "doWork---enqueue--主Thread:${Looper.getMainLooper().thread.name}")
+        Log.e("ddd", "doWork---enqueue--Thread:${Thread.currentThread().name}")
         // 启动任务
         WorkManager.getInstance(context).enqueue(workRequest)
         WorkManager.getInstance(context).getWorkInfoByIdLiveData(workRequest.id)

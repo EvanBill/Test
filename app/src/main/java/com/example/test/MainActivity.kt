@@ -18,13 +18,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
         binding.btnWork.setOnClickListener {
-
-            Timber.tag("fff").e("--主Thread${Looper.getMainLooper().thread.name}")
             val params = mutableMapOf<String, Any>()
-
             params["funType"] = AiWorkFunType.TEXT_TO_VIDEO_NEW
             params["params"] = "123456"
-
             WorkManagerUtil.startWork(this,params)
         }
 

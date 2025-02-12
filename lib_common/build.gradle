@@ -1,19 +1,17 @@
 plugins {
-    id 'com.android.application'
+    id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
 }
 
 android {
-    namespace 'com.example.lib_common'
-    compileSdk 34
+    namespace 'com.example.common'
+    compileSdk 35
 
     defaultConfig {
-        applicationId "com.example.lib_common"
-        minSdk 24
-        targetSdk 34
+        minSdk 21
+        targetSdk 35
         versionCode 1
         versionName "1.0"
-
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 

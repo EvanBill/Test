@@ -90,7 +90,6 @@ public class EdLog {
             msg += " | " + Thread.currentThread().getName();
             if (tag != null && tag.length() > 0) {
                 Log.i(tag, msg);
-                EdToast.showToast(msg, Toast.LENGTH_LONG);
             } else {
                 Log.i(DEFAULTTAG, msg);
             }

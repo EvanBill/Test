@@ -36,7 +36,7 @@ import com.example.common.view.blurview.impl.AndroidXBlurImpl;
 import com.example.common.view.blurview.impl.BlurImpl;
 import com.example.common.view.blurview.impl.EmptyBlurImpl;
 import com.example.common.view.blurview.impl.SupportLibraryBlurImpl;
-import com.example.lib_common.R;
+import com.example.common.R;
 
 
 /**

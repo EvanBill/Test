@@ -55,11 +55,6 @@ class TrimActivity : AppCompatActivity(), TimelineMusicSetHelper.MusicSetListene
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-        binding.btnWork.setOnClickListener {
-
-            Timber.tag("fff").e("--主Thread${Looper.getMainLooper().thread.name}")
-            WorkManagerUtil.startWork(this)
-        }
         musicSetHelper = TimelineMusicSetHelper(this, mediaPlayer, this,false, false)
 
 

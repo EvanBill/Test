@@ -1,4 +1,4 @@
-package com.example.lib_common
+package com.example.common
 
 import org.junit.Test
 
