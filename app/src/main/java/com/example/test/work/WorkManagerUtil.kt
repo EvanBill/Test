@@ -32,6 +32,7 @@ object WorkManagerUtil {
 //                    .setRequiredNetworkType(NetworkType.CONNECTED) // 网络条件
 //                    .build()
 //            )
+                //            .setExpedited(OutOfQuotaPolicy.DROP_WORK_REQUEST)//配置了这个前台服务为必须
                 .build()
         val funType = params["funType"] as String
         val workerId = workRequest.id
